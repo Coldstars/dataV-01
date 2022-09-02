@@ -1,0 +1,118 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home header{
+        background-image: url(../images/header.png);
+        height: calc(99 / 2420 * 100rem);
+        width: calc(2420 / 2420 * 100rem);
+        background-size: cover;
+    }
+.home main{
+    width: calc(2420 / 2420 * 100rem);
+    height: calc(1114 / 2420 * 100rem);
+    /* background-color: #fff; */
+    padding: 0 calc(32 / 2420 * 100rem);
+    display: grid;
+    grid-template-areas: 
+        "box1 box2 box3 box4" 
+        "box5 box6 box3 box7"
+        "box8 box8 box9 box10" 
+    ;
+    grid-column-gap:calc(32 / 2420 * 100rem);
+    grid-row-gap:calc(32 / 2420 * 100rem);
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 2fr 1.8fr;
+}   
+.bordered{
+    border:calc(4 / 2420 * 100rem) solid rgba(19, 157, 255, .8);
+    border-radius: calc(8 / 2420 * 100rem);
+    box-shadow: 0 1px 2px 0 rgba(56, 91, 243,.1);
+    position: relative;
+}
+.bordered::before{
+    pointer-events: none;
+    position: absolute;
+    left:  0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: '';
+    box-shadow: 
+    calc(82 / 2420 * 100rem) 0 0 calc(-78 / 2420 * 100rem) rgb(3, 32, 95),
+    calc(-82 / 2420 * 100rem) 0 0 calc(-78 / 2420 * 100rem) rgb(3, 32, 95),
+    0 calc(82 / 2420 * 100rem) 0 calc(-78 / 2420 * 100rem) rgb(3, 32, 95),
+    0 calc(-82 / 2420 * 100rem) 0 calc(-78 / 2420 * 100rem) rgb(3, 32, 95),
+    0 calc(25 / 2420 * 100rem) 0 calc(-21 / 2420 * 100rem) rgb(3, 46, 126),
+    0 calc(-25 / 2420 * 100rem) 0 calc(-21 / 2420 * 100rem) rgb(3, 46, 126),
+    calc(25 / 2420 * 100rem) 0 0 calc(-21 / 2420 * 100rem) rgb(3, 46, 126),
+    calc(-25 / 2420 * 100rem) 0 0 calc(-21 / 2420 * 100rem) rgb(3, 46, 126);
+}
+.home main .section1{
+    grid-area: box1;
+    display: flex;
+}
+.home main .section1 .Echart1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.home main .title-box {
+    border:calc(4 / 2420 * 100rem) solid rgba(19, 157, 255, .8);
+    flex-shrink: 0;
+    position: absolute;
+    top: calc(-4 / 2420 * 100rem);
+    border-end-end-radius:calc(8 / 2420 * 100rem) ;
+    border-bottom-left-radius: calc(8 / 2420 * 100rem) ;
+    display: inline-block;
+    padding-top: calc(3 / 2420 * 100rem);
+    padding-left: calc(3/ 2420 * 100rem);
+    font-size: calc(18 / 2420 * 100rem);
+    color: rgb(214, 238, 255);
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0 calc(1/ 2420 * 100rem) calc(2/ 2420 * 100rem) rgba(255, 255, 255, 0.75);
+    height: calc(40 / 2420 * 100rem);
+    width: calc(220 / 2420 * 100rem);
+}
+.home main .section1 .Echart1 .chart{
+    flex: 1;
+    display: flex;
+    width: 100%;
+}
+.home main .section2{
+    grid-area: box2;
+}
+.home main .section3{
+    grid-area: box3;
+}
+.home main .section4{
+    grid-area: box4;
+}
+.home main .section5{
+    grid-area: box5;
+}
+.home main .section7{
+    grid-area: box7;
+}
+.home main .section8{
+    grid-area: box8;
+}
+.home main .section9{
+    grid-area: box9;
+}
+.home main .section10{
+    grid-area: box10;
+}
+
+.home footer{
+    background-color: #fff;
+    height: calc(68 / 2420 * 100rem);
+    width: calc(2420 / 2420 * 100rem);
+
+}
