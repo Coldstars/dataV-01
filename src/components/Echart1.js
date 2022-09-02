@@ -7,7 +7,7 @@ export default function Echart1() {
         var myChart = echarts.init(divRef.current);
         myChart.setOption({
             xAxis: {
-                data: ['城关区', '七里河区', '西固区', '安宁区', '红谷区', '永丰区', '博览区', '渝中区', '兰州新区'],
+                data: ['城关', '七里河区', '西固区', '安宁区', '红谷区', '永丰区', '博览区', '渝中区', '兰州新区'],
                 axisLabel: {
                     fontSize: 12 / 2420 * window.pageWidth,
                     // X轴文字换行
